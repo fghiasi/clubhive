@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #F2EFE4;
+    --main-bg-color: #E2E2E2;
     --font-icon-family: 'Font Awesome\ 5 Free';
 }
 
@@ -227,12 +227,12 @@ button.leave::before {
 
 #start-a-room, #create-room {
     display: block;
-    background-color: #27ae60;
+    background-color: #3A6EA5;
     color: white;
     font-size: 1.56em;
-    width: 10.75em;
+    width: 12.75em;
     height: 2.12em;
-    border-radius: 25px;
+    /*border-radius: 25px;*/
     border-style: none;
     margin: auto;
     cursor: pointer;
@@ -272,4 +272,52 @@ button.leave::before {
         font-size: 0.8em;
     }
 
+}
+
+.rooms .search-container {
+    float: top;
+}
+
+.rooms input[type=text] {
+    margin-top: 8px;
+    padding: 14px;
+    font-size: 17px;
+    border: none;
+    width: 80%;
+}
+
+.rooms .search-container button {
+    float: inside;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.rooms .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .rooms .search-container {
+        float: none;
+    }
+    .rooms a, .rooms input[type=text], .rooms .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .rooms input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+form {
+    margin-left: 30px;
 }

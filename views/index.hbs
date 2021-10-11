@@ -3,7 +3,7 @@
 
     <head>
         <title>
-            👋 Clubhive
+            👋 Imperfection
         </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,23 +14,30 @@
         <meta name="description" content="Clubhive is an open-source self-hosted Clubhouse alternative that lets you have conversations with people with similar passions and interests." />
         <meta
             name="keywords"
-            content="clubhive, clubhouse clone, spotify greenroom clone, egen solutions, ashwin hariharan, projects, open source, tutorial"
+            content="SBT, clubhouse clone, spotify greenroom clone, egen solutions, ashwin hariharan, projects, open source, tutorial"
         >
     </head>
 
     <body>
         <header class="container flex-container">
-            <h1>👋 Clubhive </h1>
+            <h1>👋 SBT: All Rooms </h1>
             <h1
                 id="user"
                 data-username="{{ username }}"
                 data-userid="{{ userId }}"
                 data-name="{{ name }}"
-                > Howdy {{ name }}</h1>
+                > Welcome {{ name }}</h1>
         </header>
         
         <div class="container flex-container" id="rooms-container">
+
             <section class="rooms">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search by Topic or ID..." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
                 <ul id="room-list">
                     <!--
                         Container for the list of rooms
@@ -38,12 +45,13 @@
                 </ul>
 
                 <button id="start-a-room" type="button">
-                    Start a room
+                    Join
                 </button>
             </section>
             
 
             <section id="room-details" class="room-details" style="display: none;">
+
                 <h1 id="club-name" class="club-name">
                     
                 </h1>
