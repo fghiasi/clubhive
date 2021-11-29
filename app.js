@@ -12,6 +12,8 @@ require('dotenv').config();
 const indexRouter = require('./routes/index');
 const roomsRouter = require('./routes/rooms');
 
+const signupRouter = require('./routes/signup');
+
 const app = express();
 
 // view engine setup
@@ -27,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet())
 
 app.use('/', indexRouter);
+app.use('/signup', signupRouter);
+
 app.use('/rooms', roomsRouter);
 
 /**
