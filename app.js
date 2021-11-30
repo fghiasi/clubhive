@@ -13,8 +13,14 @@ const indexRouter = require('./routes/index');
 const roomsRouter = require('./routes/rooms');
 
 const signupRouter = require('./routes/signup');
+const signinRouter = require('./routes/signin');
+
+const contactusRouter = require('./routes/contactus');
+const aboutusRouter = require('./routes/aboutus');
 
 const app = express();
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,8 +36,12 @@ app.use(helmet())
 
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
+app.use('/signin', signinRouter);
 
 app.use('/rooms', roomsRouter);
+
+app.use('/aboutus', aboutusRouter);
+app.use('/contactus', contactusRouter);
 
 /**
  * Create HTTP server.
