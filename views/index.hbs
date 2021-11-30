@@ -3,12 +3,13 @@
 
     <head>
         <title>
-            👋 Imperfection
+            👋 Support By Tehdrienne
         </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/signup.css" media="screen">
         <link rel="stylesheet" href="/stylesheets/index.css" media="screen">
 
         <meta name="description" content="SBT is an app that enables everyone to join and talk with a professionals and get Psycho therapy" />
@@ -19,15 +20,33 @@
     </head>
 
     <body>
-        <header class="container flex-container">
-            <h1>👋 SBT: All Rooms </h1>
-            <h1
-                id="user"
-                data-username="{{ username }}"
-                data-userid="{{ userId }}"
-                data-name="{{ name }}"
-                > Welcome {{ name }}</h1>
-        </header>
+
+        <div class="banner">
+
+            <div class="navbar">
+
+            <a href="/"><img src = "images/Support_byTehdrienne_Logo.png"  class="logo"></a>
+                     <header class="container flex-container">
+
+                         <h1
+                             id="user"
+                             data-username="{{ username }}"
+                             data-userid="{{ userId }}"
+                             data-name="{{ name }}"
+                             > Welcome {{ name }}</h1>
+                     </header>
+             <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="aboutus">About Us</a></li>
+               <li><a href="contactus">Contact Us</a></li>
+               <li><a href="signup">Sign Up</a></li>
+               <li><a href="signin">Log In</a></li>
+
+
+             </ul>
+
+        </div>
+
 
         <div class="container flex-container" id="rooms-container">
 
@@ -44,9 +63,9 @@
                     -->
                 </ul>
 
-                <button id="start-a-room" type="button">
-                    Join
-                </button>
+{{!--                 <button id="start-a-room" type="button"> --}}
+{{!--                     Join --}}
+{{!--                 </button> --}}
             </section>
 
 
@@ -78,6 +97,9 @@
                     <button class="mute" type="button" id="mic">
 
                 </div>
+{{!--                 <button id="start-a-room" type="button"> --}}
+{{!--                     Join --}}
+{{!--                 </button> --}}
             </section>
         </div>
 
@@ -88,6 +110,7 @@
         <noscript>
             This application requires JavaScript to be enabled
         </noscript>
+        </div>
     </body>
 
 </html>
