@@ -1,5 +1,5 @@
-![](https://www.ashwinhariharan.tech/blog/how-to-build-your-own-clubhouse/index.png)
-# Clubhive
+Product Perspective:
+    The Support By Tehdrienne (SBT) is a responsive web application that is designed to provide psychological counseling and therapy for students in UCI, by professional therapists. SBT aims to attract an audience at the local levels of University of California, Irvine.
 
 > A free, open-source clubhouse alternative and proof-of-concept.
 
@@ -8,19 +8,14 @@
 
 Fork this repository, read the blog post and follow the tutorial to build the app!
 
-## Requirements
-
-- A laptop or a desktop computer
-- Chrome browser
-- Internet connectivity
+Product Functions:
+    Support By Tehdrienne is a website based application that is compatible with any mobile devices. It is mainly operated by numerous live chat rooms, where professional therapists host the sessions. 
 
 ## App Screenshots
 
-#### On phone
-![Screenshot on a phone](/public/images/clubhive-mobile.png)
 
 #### On desktop
-![Screenshot on a desktop browser](/public/images/clubhive-web.png)
+![Screenshot on a desktop browser](/public/images/home_page.jpg)
 
 ## Instructions to install
 
