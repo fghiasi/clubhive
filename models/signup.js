@@ -16,7 +16,14 @@ async function registerUser(user_name,user_user_name, user_email, user_password)
         `INSERT INTO users (name, username , email, password)
                 VALUES ($1, $2, $3, $4)
                 RETURNING id, password`,
-        [user_name,user_user_name, user_email, hashedPassword]
+        [user_name,user_user_name, user_email, hashedPassword],
+        (err, results) => {
+            if (err) {
+                throw err;
+            }
+            console.log("sign up result: ");
+            console.log(results.rows);
+        }
     );
 }
 
