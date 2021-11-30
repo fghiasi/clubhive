@@ -15,7 +15,7 @@ body{
 form{
     margin-top: none;
     text-align: center;
-    
+
 }
 input{
     display: block;
@@ -27,22 +27,22 @@ input{
     font-size: 20px;
     border-bottom: 1px solid white;
     background: transparent;
-    color: white;
+    color: #3A6EA5;
     width: auto;
     text-align: center;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 
 form h1 {
-   margin-bottom: 30px; 
+   margin-bottom: 30px;
 }
 
 ::placeholder{
     text-align: center;
-    color: whitesmoke;
+    color: #3A6EA5;
 }
 .banner{
     width: 100%;
@@ -108,7 +108,7 @@ form h1 {
  button{
     width: 350px;
     height: 30px;
-    text-align: center; 
+    text-align: center;
     background-color: deepskyblue;
     border: 2px solid deepskyblue;
 
