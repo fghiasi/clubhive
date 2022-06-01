@@ -40,3 +40,5 @@ Product Functions:
 ## To execute psql commands
 1. SSH into your Postgres docker container: `docker exec --user postgres -it clubhouse-postgres /bin/bash` (Skip this step if you have a native PostgreSQL installation)
 2. Run `psql` on the terminal
+
+
